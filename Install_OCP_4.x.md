@@ -82,7 +82,7 @@ We will discuss each of these in turn in the rest of this document.
 
 1. Either register with subscription manager or create a local yum repository so needed packages can be installed.
 
-1. Disable the firewall and selinux (or open a hole for port 80)
+1. Disable the firewall and selinux (or open a hole for port 80) - <b>as root user</b>
 
   ```
   # Stop the firewall and set selinux to passive
@@ -93,11 +93,16 @@ We will discuss each of these in turn in the rest of this document.
   systemctl disable firewalld
   sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
   ```
+  
+  On ubuntu, Check the firewall with : ufw status
+  If enabled, do ufw stop
+  SELinux not issue on ubuntu
 
 1. Create a directory for your new cluster.  In this document I will use a cluster named after my userid `vhavard`.
 
   ```
   mkdir /opt/vhavard
+  -- mkdir /opt/sysadmin
   ```
 
 1. Install the httpd web server
