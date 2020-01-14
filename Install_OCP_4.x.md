@@ -37,7 +37,7 @@ In this guide we will use the following topology:
 <details>
 <summary>Basic Install Steps for VMware</summary>
 
-  1. Create an installation node (running RHEL 7 or 8) an with embedded web server (or reuse an existing server that you have used for a previous install - you can install multiple clusters with a single install server).
+  1. Create an installation node (running RHEL 7.X or 8) an with embedded web server (or reuse an existing server that you have used for a previous install - you can install multiple clusters with a single install server).
   1. Download and deploy the rhcos template onto your vcenter server.
   1. Download and explode the openshift installer onto your installation server.
   1. Create the needed install-config.yaml file on your installation server.
