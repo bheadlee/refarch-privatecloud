@@ -120,8 +120,9 @@ We will discuss each of these in turn in the rest of this document.
 1.  Download the openshift client and installer and explode it into your /opt directory.
 
   ```
+  (Replace "latest" with 4.2.0)
   cd /opt
-  wget -c https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux-4.2.0.tar.gz
+  wget -c https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux-4.2.0.tar.gz 
   wget -c https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-install-linux-4.2.0.tar.gz
   ```
 
