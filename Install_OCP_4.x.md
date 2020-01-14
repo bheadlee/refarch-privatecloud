@@ -43,7 +43,7 @@ In this guide we will use the following topology:
   1. Create the needed install-config.yaml file on your installation server.
   1. Create the needed ignition files for your deployment
   1. Deploy, but don't boot the bootstrap, control plane, and compute nodes.
-  1. Configure the DHCP server.
+  1. Configure the DHCP server. (In lab send to Victor/team) Want to use same domain for everything
   1. Configure DNS to support your cluster
   1. Create or configure a load balancer for the control plane
   1. Create or configure a load balancer for the compute nodes.
